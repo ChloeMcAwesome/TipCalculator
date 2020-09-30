@@ -18,7 +18,7 @@ struct ContentView: View {
         return f
     }()
     
-    private let tipPercentages = [0.15, 0.2, 0.25]
+    private let tipPercentages = [0.15, 0.2, 0.50]
     
     private var percentageFormatter: NumberFormatter = {
         let f = NumberFormatter()
@@ -51,7 +51,7 @@ struct ContentView: View {
             VStack(spacing:20) {
                 Spacer()
                 
-                TextField("totalInput", value: $totalInput, formatter: currencyFormatter)
+                TextField("tlInput", value: $totalInput, formatter: currencyFormatter)
                     .font(.largeTitle)
                     .padding()
                     .background(Color.white)
